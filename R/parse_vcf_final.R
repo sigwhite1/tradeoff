@@ -17,7 +17,7 @@ library(gridExtra)
 library(grid)
 
 ###################Figure 4 - heatmap###########################
-setwd("C:/Users/lojoh/OneDrive/Documents/BootsLab/moths/data")
+setwd("C:/Users/lojoh/OneDrive/Documents/BootsLab/moths/data") ##Change this to your working directory
 
 vars <- read.delim("inbred_intersect_cds.out", header=FALSE, stringsAsFactors = FALSE)
 vars <- vars %>%
@@ -84,7 +84,7 @@ ggplot(distance_melted, aes(x = Inbred_1, y = Inbred_2, fill = Distance)) +
 #####################################################
 
 #################figure 6 - manhattan plots###############
-setwd("C:/Users/lojoh/OneDrive/Documents/BootsLab/moths/data/snprelate")
+setwd("C:/Users/lojoh/OneDrive/Documents/BootsLab/moths/data/snprelate") ##Change this to your working directory
 
 vcf_files <- list.files("windows/", pattern = "\\.vcf$", full.names = TRUE, recursive = TRUE)
 
